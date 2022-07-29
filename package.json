@@ -1,0 +1,58 @@
+{
+  "name": "wyy-plugs",
+  "version": "0.1.0",
+  "description": "Awesome node modules.",
+  "keywords": [
+    "wyy-plugs",
+    "zce"
+  ],
+  "repository": "zce/wyy-plugs",
+  "license": "MIT",
+  "author": "wangking <815436232@qq.com> (https://github.com/)",
+  "main": "lib/index.js",
+  "bin": "bin/bin.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "lint": "standard --fix",
+    "test": "jest --coverage",
+    "prepare": "npm run lint && npm run test"
+  },
+  "renovate": {
+    "extends": [
+      "zce"
+    ]
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "dependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^6.1.0",
+    "gulp-load-plugins": "^2.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-swig": "^0.9.1",
+    "gulp-uglify": "^3.0.2",
+    "gulp-useref": "^3.1.6"
+  },
+  "devDependencies": {
+    "standard": "16.0.4"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  }
+}
